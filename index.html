@@ -16,7 +16,7 @@
     <div id="new-book-modal" class="flex centered">
       <div id="new-book-modal-card" class="flex col centered">
         <h2>Add a Book to the Library</h2>
-        <div id="input-div" class="flex col">
+        <div id="new-book-input-div" class="flex col">
           <label for="input-title">
             Book Title:
             <br>
@@ -38,11 +38,37 @@
         </div>
       </div>
     </div>
+    <div id="edit-book-modal" class="flex centered">
+      <div id="edit-book-modal-card" class="flex col centered">
+        <h2>Edit a Book in the Library</h2>
+        <div id="edit-book-input-div" class="flex col">
+          <label for="input-title">
+            Book Title:
+            <br>
+            <input id="edit-book-title" type="text" name="input-title">
+          </label>
+          <label for="input-author">
+            Author:
+            <br>
+            <input id="edit-book-author" type="text" name="input-author">
+          </label>
+          <label for="input-pages">
+            Number of Pages:
+            <br>
+            <input id="edit-book-pages" type="number" min="1" name="input-pages">
+          </label>
+        </div>
+        <div>
+          <button id="save-book-btn">Save</button>
+        </div>
+      </div>
+    </div>
     <div id="secondary-container" class="flex col centered">
       <div id="header" class="flex centered">
         <h1>Odin Library</h1>
       </div>
       <div id="library-display" class="flex wrap items-center">
+        <!-- 
         <div id="book-1" class="flex col centered">
           <h2 id="book-1-title">Mother of Learning</h2>
           <h4 id="book-1-author">Demagoj Kurmaic</h4>
@@ -57,8 +83,17 @@
                 <span class="slider round"></span>
               </label>
             </div>
+            <div id="book-1-options" class="flex centered">
+              <div id="book-1-edit" class="flex centered">
+                <button>Edit</button>
+              </div>
+              <div id="book-1-remove" class="flex centered">
+                <button>Remove</button>
+              </div>
+            </div>
           </div>
-        </div>
+        </div> 
+        -->
       </div>
       <div id="controls" class="flex centered">
         <div id="open-modal" class="flex centered">
